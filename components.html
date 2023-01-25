@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="ie=edge" http-equiv="X-UA-Compatible">
+        <title>Site</title>
+        <link href="main.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container"><br><br>
+            <div class="h2">buttons</div>
+            <div class="button button-blue">Button blue</div>
+            <div class="button button-primary button-dark"><span>Button</span><span class="icon fill"><svg width="13" height="21">
+                        <use xlink:href="#attachment"></use>
+                    </svg></span></div>
+            <div class="button button-primary button-blue"><span>Button</span><span class="icon stroke"><svg width="9" height="14">
+                        <use xlink:href="#arr-right-sm"></use>
+                    </svg></span></div><br><br><br><br>
+            <div class="h2">modals</div>
+            <div class="button button-blue" data-micromodal-trigger="modal-resume">modal resume</div>
+            <div class="button button-blue" data-micromodal-trigger="modal-vacancy">modal vacancy</div>
+        </div>
+        <div class="modal micromodal-slide" id="modal-resume" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-resume-title"><button class="modal__close" aria-label="Закрыть окно" data-micromodal-close></button>
+                    <header class="modal__header">
+                        <h3 class="modal__title" id="modal-resume-title">Отправьте резюме</h3>
+                        <div class="modal__subtitle">Расскажите о себе и приложите файл, мы свяжемся с вами</div>
+                    </header>
+                    <main class="modal__content">
+                        <form class="form-default" id="form-resume">
+                            <div class="form-group"><input class="form-control" type="text" placeholder="Имя" required></div>
+                            <div class="form-group"><input class="form-control" type="email" placeholder="E-mail" required></div>
+                            <div class="form-group"><textarea class="form-control" placeholder="Сообщение" required></textarea></div>
+                            <div class="form-default__file b-file">
+                                <div class="button button-primary button-dark b-file__open"><span>Приложить файл</span><span class="icon fill"><svg width="13" height="21">
+                                            <use xlink:href="#attachment"></use>
+                                        </svg></span><input type="file" accept=".doc,.docx,.pdf"></div>
+                                <div class="b-file__allowed-text">.doc, .docx, .pdf, <span class="muted">не более 10Мб</span></div>
+                                <div class="b-file__attached">
+                                    <div class="b-file__attached-text"></div>
+                                    <div class="b-file__attached-close"></div>
+                                </div>
+                            </div>
+                            <div class="form-default__footer">
+                                <div class="text">Откликаясь на вакансию, вы соглашаетесь с
+                                    <a href="#" target="_blank">обработкой ваших персональных данных</a></div><button class="button button-blue button-default" type="submit">Отправить</button>
+                            </div>
+                        </form>
+                    </main>
+                </div>
+            </div>
+        </div>
+        <div class="modal micromodal-slide" id="modal-vacancy" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-vacancy-title"><button class="modal__close" aria-label="Закрыть окно" data-micromodal-close></button>
+                    <main class="modal__content">
+                        <div class="b-vacancy">
+                            <div class="b-vacancy__side">
+                                <div class="h2 b-vacancy__title">Специалист технической поддержки</div>
+                                <div class="b-vacancy__salary">от 1 000 бел. руб. до вычета налогов</div>
+                                <div class="b-vacancy__submit button button-primary button-blue"><span>Откликнуться</span><span class="icon stroke"><svg width="9" height="14">
+                                            <use xlink:href="#arr-right-sm"></use>
+                                        </svg></span></div>
+                                <p>Требуемый опыт работы: не требуется<br>Полная занятость, полный день</p>
+                                <div class="b-vacancy__footer">
+                                    <div class="b-vacancy__location"><span class="city">Витебск</span><span class="muted">5-я Кооперативная улица, 8</span></div>
+                                </div>
+                            </div>
+                            <div class="b-vacancy__content">
+                                <div class="b-vacancy__subtitle">Требования к кандидату:</div>
+                                <ul class="list">
+                                    <li>Высокая стрессоустойчивость, коммуникабельность, ответственность, исполнительность</li>
+                                    <li>Аккуратность, наличие способности обучаться</li>
+                                    <li>Умение вежливо и корректно общаться с пользователями. Уверенный пользователь ПК</li>
+                                    <li>IT образование</li>
+                                </ul>
+                                <div class="b-vacancy__subtitle">Приветствуется:</div>
+                                <ul class="list">
+                                    <li>Наличие опыта работы в технической поддержке;</li>
+                                    <li>Наличие знаний основ розничной и оптовой торговли;</li>
+                                    <li>Наличие опыта работы в HelpDesk, ServiceDesk систем;</li>
+                                    <li>Наличие навыков построения простейших SQL-запросов;</li>
+                                    <li>Наличие опыта работы с 1С v8.3</li>
+                                    <li>Наличие опыта работы с СУБД MSSQL, PostgreSQL.</li>
+                                </ul>
+                                <div class="b-vacancy__subtitle">Должностные обязанности:</div>
+                                <ul class="list">
+                                    <li>Наличие опыта работы в технической поддержке;</li>
+                                    <li>Наличие знаний основ розничной и оптовой торговли;</li>
+                                    <li>Наличие опыта работы в HelpDesk, ServiceDesk систем;</li>
+                                    <li>Наличие навыков построения простейших SQL-запросов;</li>
+                                    <li>Наличие опыта работы с 1С v8.3</li>
+                                    <li>Наличие опыта работы с СУБД MSSQL, PostgreSQL.</li>
+                                </ul>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae illo alias blanditiis similique esse eos, quod quis soluta molestias minima totam, natus, mollitia culpa, veniam provident facilis nam odio earum. Enim, fuga soluta consectetur id iure eos officia iusto officiis inventore laboriosam dolorum ab architecto mollitia, pariatur distinctio nemo dignissimos.</p>
+                                <p>Molestias quasi nisi eaque hic consequatur consequuntur sit necessitatibus autem quam tempore atque vero ipsam minus dolorem voluptatum sunt voluptatem, corporis dolor voluptatibus tempora eum. Odio ducimus temporibus, in quaerat. Id nobis perferendis sed tenetur modi, eos. Aliquid voluptatibus ex modi, et incidunt obcaecati numquam totam laborum soluta nemo sunt.</p>
+                                <p>Numquam, dolores, repellendus! Accusantium ipsum modi sint, tenetur, enim voluptatem quidem, minima eligendi neque illum, fugit possimus. Quam, quia consectetur eligendi placeat blanditiis, recusandae quis, eveniet provident iusto inventore quas illum aut veritatis cumque ipsa saepe debitis modi obcaecati nisi cupiditate officiis, dolorem magnam aliquid odio. Tenetur laborum, praesentium fugit!</p>
+                                <p>Natus dolorem temporibus consectetur amet commodi adipisci eveniet ducimus dignissimos, possimus voluptatem magni minima deserunt officia odio, totam error suscipit eligendi, deleniti aut nobis. Repudiandae cum debitis, ut accusantium mollitia. Dolorum eos id numquam. Et voluptatum maiores vel doloribus officia deleniti fuga, saepe recusandae, necessitatibus beatae aperiam, perferendis, nesciunt earum.</p>
+                                <p>Id blanditiis laboriosam soluta error! Eum eius quas molestiae veniam alias libero, error saepe culpa fugiat necessitatibus accusamus architecto excepturi similique consequuntur temporibus dicta, nobis iure maxime quae eveniet porro. Corporis aliquid exercitationem vero repudiandae dolore deserunt fugit temporibus voluptate neque perferendis. Laborum id necessitatibus dolores, pariatur iste earum ex!</p>
+                                <p>Explicabo quasi, facere minus autem earum odio, omnis corporis totam ullam ipsum et. Dignissimos magni commodi doloremque assumenda tempora repellat officiis facilis delectus in natus, ullam quasi adipisci labore autem et enim minus culpa a eum quis! Fugit rerum nesciunt ratione, debitis reiciendis aperiam, a veniam accusantium quae iste illum.</p>
+                                <p>Beatae nihil facere eius sit, itaque, non facilis iure quos. Molestiae est nulla maxime in, eligendi repellat tempora ab hic. Delectus quod, recusandae eligendi rerum ratione. At nesciunt vero ipsum possimus, culpa assumenda eaque molestiae, voluptatum quaerat ducimus accusamus quam vitae repudiandae ea tenetur dolorem maiores. Sit, aliquam tempore alias.</p>
+                                <p>At officia minus, blanditiis iusto maiores numquam dolorum sint tenetur excepturi obcaecati iure labore quam voluptate error possimus veniam velit dolore minima accusamus quos vel ullam sed. Enim totam saepe tempore dignissimos dolor recusandae, quibusdam obcaecati ut est ipsum reprehenderit provident voluptas numquam et, sapiente illo odit nihil porro. Error?</p>
+                                <p>Id sapiente fugiat beatae est nulla, veritatis laborum laboriosam fugit facilis quaerat harum, dolores obcaecati libero nobis assumenda cumque a! Laboriosam laudantium ipsa dolores molestias quia voluptatem, voluptas id dolor provident voluptatibus! Ad tempora reprehenderit aut a illum nemo, libero dolore soluta explicabo nobis dignissimos enim ipsum quibusdam repellendus placeat.</p>
+                                <p>Nemo fuga officia maiores, animi delectus quae incidunt, ab fugiat sunt inventore pariatur amet illo officiis, alias unde ipsam dignissimos fugit vitae. Repellendus quod similique, et quibusdam in beatae consequuntur, ullam quidem illum debitis a numquam nobis ipsum non maiores eveniet cum recusandae aut, mollitia libero eos quam ratione molestiae.</p>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="main.js"></script>
+
+</html>
